@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Body() {
   const roles = ["Frontend Developer", "Software Developer", "React Developer"];
@@ -58,24 +58,24 @@ function Body() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center sm:space-x-4">
-              <Link
-                to="/certificates"
+              <a
+                href="/certificates"
                 className="inline-flex text-white items-center px-6 py-3 font-medium bg-gradient-to-r from-orange-500 to-yellow-500 dark:from-orange-600 dark:to-yellow-600 rounded-lg hover:opacity-75 mb-3 sm:mb-0"
               >
                 Achievements
-              </Link>
-              <Link
-                to="/public/Prince resumes.pdf"
+              </a>
+              <a
+                href="/images/prince_resumes.pdf"
                 target="_blank"
                 className="inline-flex cursor-pointer text-white items-center px-6 py-3 font-medium bg-gradient-to-r from-orange-500 to-yellow-500 dark:from-orange-600 dark:to-yellow-600 rounded-lg hover:opacity-75"
               >
                 𝙍𝙚𝙨𝙪𝙢𝙚
-              </Link>
+              </a>
             </div>
           </div>
           <div className="flex justify-center sm:justify-end">
             <img
-              src="/public/assets/images/home-main.svg"
+              src="/images/home-main.svg"
               alt="Profile Illustration"
               className="w-[500px] object-cover transition-transform duration-300 ease-in-out hover:scale-105"
             />
