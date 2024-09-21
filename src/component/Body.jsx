@@ -65,7 +65,7 @@ function Body() {
                 Achievements
               </a>
               <a
-                href="/images/prince_resumes.pdf"
+                href="images/prince_resumes.pdf"
                 target="_blank"
                 className="inline-flex cursor-pointer text-white items-center px-6 py-3 font-medium bg-gradient-to-r from-orange-500 to-yellow-500 dark:from-orange-600 dark:to-yellow-600 rounded-lg hover:opacity-75"
               >
@@ -75,7 +75,7 @@ function Body() {
           </div>
           <div className="flex justify-center sm:justify-end">
             <img
-              src="/images/home-main.svg"
+              src="images/home-main.svg"
               alt="Profile Illustration"
               className="w-[500px] object-cover transition-transform duration-300 ease-in-out hover:scale-105"
             />
