@@ -6,37 +6,37 @@ function Certificates() {
     {
       title: "Cyber Security Experience",
       organizationName: "JP Morgan Chase & Co.",
-      url: "/public/cyber security.pdf",
+      url: "/public/assets/images/cyber_security.pdf",
     },
     {
       title: "Celonis Academy Process Automation Bootcamp",
       organizationName: "Celonis",
-      url: "/public/celonis-bootcamp.pdf",
+      url: "/public/assets/images/",
     },
     {
       title: "Coders Cub Arena",
       organizationName: "Coding Club",
-      url: "/public/unstop.pdf",
+      url: "/public/assets/images/",
     },
     {
       title: "Coders Cub Arena (Hackearth)",
       organizationName: "Hackearth",
-      url: "/public/hackerearth.pdf",
+      url: "/public/assets/images/hackerearth.pdf",
     },
     {
       title: "Javascript (Basic)",
       organizationName: "HackerRank",
-      url: "/public/javascript basics.pdf",
+      url: "/public/assets/images/javascript_basics.pdf",
     },
     {
       title: "Javascript (Intermediate)",
       organizationName: "HackerRank",
-      url: "/public/javascript intermediate.pdf",
+      url: "/public/assets/images/javascript_intermediate.pdf",
     },
     {
       title: "Python",
       organizationName: "HackerRank",
-      url: "/public/python.pdf",
+      url: "/public/assets/images/python.pdf",
     },
   ];
 
@@ -47,7 +47,7 @@ function Certificates() {
       duration: "Sep 2024 - Nov 2024",
       location: "Tata Advanced Systems, Plot #C-01, 4th Floor, World Trade Tower, Sector 16, Noida Uttar Pradesh - 201301 India.",
       role: "Worked in the Software Department, contributing to the development of a project over a two-month internship. This involved being physically present at the office for five days a week to ensure the successful completion of the project. Tasks included following security, IT, and admin guidelines, and collaborating with senior staff on assigned tasks. No stipend was provided for this internship.",
-      offerLetterUrl: "/public/OFFER LETTER TATA ADVANCE SYSTEMS LIMITED.pdf",
+      offerLetterUrl: "/public/assets/images/offer_letter.pdf",
     },
   ];
   

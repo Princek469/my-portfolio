@@ -7,7 +7,7 @@ const AboutMe = ({ darkMode }) => {
       <div className="flex pt-20 gap-3 flex-wrap md:flex-nowrap">
         <div className="w-full md:w-1/2 xl:w-1/3">
           <img
-            src="/public/prince-logo.jpg"
+            src="/public/assets/images/prince-logo.jpg"
             alt="About Me Image"
             className="rounded-full p-8 h-[375px] w-[375px] shadow-md mt-16 mx-auto border-4 border-green-500 animate-slow-bounce"
           />

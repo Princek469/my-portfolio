@@ -1,4 +1,4 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Header() {
@@ -56,7 +56,7 @@ function Header() {
         }`}
       >
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center">
+          <a to="/" className="flex items-center">
             <h1
               className="text-5xl tracking-wider font-Suse relative right-28 font-bold text-transparent
               bg-clip-text bg-gradient-to-r from-black via-gray-800 to-gray-900 
@@ -64,7 +64,7 @@ function Header() {
             >
               {displayedText}
             </h1>
-          </Link>
+          </a>
 
           {/* Navigation Links */}
           <div className="flex items-center ml-6 lg:w-auto lg:order-1">
@@ -166,8 +166,8 @@ function Header() {
               <img
                 src={
                   darkMode
-                    ? "/public/light mode.webp"
-                    : "/public/dark mode.png"
+                    ? "/public/assets/images/light.webp"
+                    : "/public/assets/images/dark.png"
                 }
                 alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
                 className="h-12 w-12  rounded-full" // Adjust the size as needed
