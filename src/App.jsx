@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./component/Home";
 import About from "./component/About";
 import ContactUs from "./component/ContactUs";
@@ -9,7 +9,7 @@ import Certificates from "./component/Certificates";
 
 function App() {
   // Use createHashRouter to define the routes
-  const appRouter = createHashRouter([
+  const appRouter = createBrowserRouter([
     {
       path: "/",
       element: <Home />,
@@ -19,23 +19,23 @@ function App() {
           element: <Body />,
         },
         {
-          path: "about",
+          path: "/about",
           element: <About />,
         },
         {
-          path: "contact",
+          path: "/contact",
           element: <ContactUs />,
         },
         {
-          path: "skills",
+          path: "/skills",
           element: <Skills />,
         },
         {
-          path: "projects",
+          path: "/projects",
           element: <Projects />,
         },
         {
-          path: "certificates",
+          path: "/certificates",
           element: <Certificates />,
         },
       ],

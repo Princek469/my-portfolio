@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 function Home() {
     return (
-        <div className="min-h-screen dark:bg-gray-950  text-white">
+        <div className="min-h-screen   text-white">
         <Header />
         
         <Outlet />

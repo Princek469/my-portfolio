@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Header() {
@@ -46,11 +46,13 @@ function Header() {
     }
   }, [darkMode]);
 
+ 
+
   return (
     <header className="fixed w-full top-0 left-0 z-50">
       <nav
         className={`border-gray-200 px-4 py-5 lg:px-6 transition-colors duration-300 ease-in-out ${
-          darkMode ? "bg-gray-900" : "bg-gray-50"
+          darkMode ? "bg-gray-800" : "bg-gray-50"
         }`}
       >
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -67,7 +69,62 @@ function Header() {
           {/* Navigation Links */}
           <div className="flex items-center ml-6 lg:w-auto lg:order-1">
             <ul className="flex">
-              {/* Other nav links... */}
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
+                      isActive
+                        ? "text-red-600 dark:text-red-600 border-lightBlue-400"
+                        : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
+                    }`
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
+                      isActive
+                        ? "text-red-600 text-red-600 border-lightBlue-400"
+                        : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
+                    }`
+                  }
+                >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/skills"
+                  className={({ isActive }) =>
+                    `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
+                      isActive
+                        ? "text-red-600 dark:text-red-600 border-lightBlue-400"
+                        : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
+                    }`
+                  }
+                >
+                  Skills
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/projects"
+                  className={({ isActive }) =>
+                    `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
+                      isActive
+                        ? "text-red-600 dark:text-red-600 border-lightBlue-400"
+                        : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
+                    }`
+                  }
+                >
+                  Projects
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   to="/certificates"
@@ -82,22 +139,38 @@ function Header() {
                   Achievements
                 </NavLink>
               </li>
-              {/* Additional links... */}
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
+                      isActive
+                        ? "text-red-600 dark:text-red-600 border-lightBlue-400"
+                        : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
+                    }`
+                  }
+                >
+                  Contacts
+                </NavLink>
+              </li>
+              {/* Repeat for other nav links */}
             </ul>
+
+           
 
             {/* Dark Mode Toggle Button */}
             <button
               onClick={toggleDarkMode}
-              className="ml-4 p-2 relative left-24 rounded-full shadow-lg transition duration-300"
+              className="ml-4 p-2 relative   left-24  rounded-full shadow-lg transition duration-300"
             >
               <img
                 src={
                   darkMode
-                    ? "/light mode.webp" // No need for '/public/'
-                    : "/dark mode.png"   // No need for '/public/'
+                    ? "/public/light mode.webp"
+                    : "/public/dark mode.png"
                 }
                 alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-                className="h-12 w-12 rounded-full" // Adjust the size as needed
+                className="h-12 w-12  rounded-full" // Adjust the size as needed
               />
             </button>
           </div>
