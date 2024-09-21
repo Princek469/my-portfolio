@@ -1,4 +1,4 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function Header() {
@@ -52,7 +52,7 @@ function Header() {
     <header className="fixed w-full top-0 left-0 z-50">
       <nav
         className={`border-gray-200 px-4 py-5 lg:px-6 transition-colors duration-300 ease-in-out ${
-          darkMode ? "bg-gray-800" : "bg-gray-50"
+          darkMode ? "bg-gray-900" : "bg-gray-50"
         }`}
       >
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
@@ -75,7 +75,7 @@ function Header() {
                   className={({ isActive }) =>
                     `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
                       isActive
-                        ? "text-red-600 dark:text-red-600 border-lightBlue-400"
+                        ? "text-red-600 dark:text-red-600 border-red-500"
                         : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
                     }`
                   }
@@ -89,7 +89,7 @@ function Header() {
                   className={({ isActive }) =>
                     `block py-2 px-4 font-Suse font-bold text-xl border-b-2 border-transparent lg:border-none duration-200 ${
                       isActive
-                        ? "text-red-600 text-red-600 border-lightBlue-400"
+                        ? "text-red-600 text-red-500 border-lightBlue-400"
                         : "text-black dark:text-white hover:text-red-600 hover:underline hover:border-lightBlue-400"
                     }`
                   }

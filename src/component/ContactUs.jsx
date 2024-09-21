@@ -94,7 +94,7 @@ function ContactUs() {
                     </div>
                     
                     <div>
-                        <h3 className="text-3xl font-semibold text-gray-100 mb-4">𝒮𝑒𝓃𝒹 𝓊𝓈 𝒶 𝓂𝑒𝓈𝓈𝒶𝑔𝑒</h3>
+                        <h3 className="text-3xl font-semibold text-gray-100 dark:text-black mb-4">𝒮𝑒𝓃𝒹 𝓊𝓈 𝒶 𝓂𝑒𝓈𝓈𝒶𝑔𝑒</h3>
                         <form className="space-y-4" onSubmit={handleContactForm}>
                             <div>
                                 <input

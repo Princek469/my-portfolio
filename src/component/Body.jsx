@@ -30,7 +30,7 @@ function Body() {
   }, [index, roleIndex, currentRole, roles]);
 
   return (
-    <div className="pt-[120px] bg-gray-50 dark:bg-gray-900 transition-colors duration-500">
+    <div className="pt-[120px] bg-gray-50 dark:bg-gray-950 transition-colors duration-500">
       {/* Updated background color class with light (gray-100) and dark mode (gray-900) */}
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col-reverse gap-5 sm:flex-row items-center justify-between">
@@ -64,13 +64,13 @@ function Body() {
               >
                 Achievements
               </Link>
-              <Link
-                to="/public/Prince resumes.pdf"
+              <a
+                href="/public/Prince resumes.pdf"
                 target="_blank"
                 className="inline-flex cursor-pointer text-white items-center px-6 py-3 font-medium bg-gradient-to-r from-orange-500 to-yellow-500 dark:from-orange-600 dark:to-yellow-600 rounded-lg hover:opacity-75"
               >
                 𝙍𝙚𝙨𝙪𝙢𝙚
-              </Link>
+              </a>
             </div>
           </div>
           <div className="flex justify-center sm:justify-end">

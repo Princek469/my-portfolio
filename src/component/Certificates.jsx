@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 function Certificates() {
 
@@ -6,7 +6,7 @@ function Certificates() {
     {
       title: "Cyber Security Experience",
       organizationName: "JP Morgan Chase & Co.",
-      url: "/public/cyber security.pdf",
+      url: "/cyber security.pdf",
     },
     {
       title: "Celonis Academy Process Automation Bootcamp",
@@ -69,13 +69,13 @@ function Certificates() {
                 {cert.title}
               </h3>
               <p className="text-lg text-gray-300 dark:text-gray-700 font-bold ">{cert.organizationName}</p>
-              <Link
-                to={cert.url}
+              <a
+                href={cert.url}
                 target="_blank"
                 className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-500 hover:shadow-lg transition duration-300"
               >
                 View Certificate
-              </Link>
+              </a>
             </div>
           ))}
         </div>
@@ -102,13 +102,13 @@ function Certificates() {
               <p>{internship.role}</p>
             </div>
 
-            <Link
-              to={internship.offerLetterUrl}
+            <a
+              href={internship.offerLetterUrl}
               target="_blank"
               className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-500 hover:shadow-lg transition duration-300"
             >
               View Offer Letter
-            </Link>
+            </a>
           </div>
         ))}
       </div>
